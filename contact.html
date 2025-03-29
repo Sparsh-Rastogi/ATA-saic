@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Ask The Alumni</title>
+    <link rel="stylesheet" href="ata.css">
+    <style>
+      .poc-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+
+      .poc-card {
+        background: white;
+        border-radius: 1rem;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .poc-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+
+      .poc-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: 0 auto 1rem;
+        background: linear-gradient(to right, var(--blue-600), var(--indigo-700));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+
+      .poc-name {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: var(--gray-900);
+        margin-bottom: 0.5rem;
+      }
+
+      .poc-branch {
+        color: var(--blue-600);
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+
+      .poc-contact {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .poc-contact a {
+        color: var(--gray-600);
+        transition: color 0.2s;
+      }
+
+      .poc-contact a:hover {
+        color: var(--blue-600);
+      }
+
+      @media (max-width: 1024px) {
+        .poc-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 640px) {
+        .poc-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen bg-white">
+      <!-- Navigation -->
+      <nav class="nav">
+        <div class="container">
+          <div class="nav-content">
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="how-it-works.html">How It Works</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="index.html" class="logo">
+              <img src="logo.svg" alt="ATA Logo" width="80" height="80">
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <header class="hero">
+        <div class="container">
+          <div class="text-center">
+            <h1>Contact Us</h1>
+            <p>Meet your first-year Points of Contact who are here to help you</p>
+          </div>
+        </div>
+        <div class="hero-skew"></div>
+      </header>
+
+      <!-- POC Section -->
+      <section class="py-20 bg-gray-50">
+        <div class="container">
+          <h2 class="text-3xl font-bold text-center mb-12">First Year POCs</h2>
+          
+          <div class="poc-grid">
+            <!-- POC 1 -->
+            <div class="poc-card">
+              <div class="poc-image">S</div>
+              <h3 class="poc-name">Sparsh Rastogi</h3>
+              <div class="poc-branch">Electronics Engineering</div>
+              <div class="poc-contact">
+                <a href="mailto:sparsh.rastogi.ece24@itbhu.ac.in" title="Email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/sparsh-rastogi-83226b321/" target="_blank" title="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- POC 2 -->
+            <div class="poc-card">
+              <div class="poc-image">N</div>
+              <h3 class="poc-name">Niraj Nemichand Hariyani</h3>
+              <div class="poc-branch">Electronics Engineering</div>
+              <div class="poc-contact">
+                <a href="mailto:riya.patel.ee.22@itbhu.ac.in" title="Email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/niraj-hariyani-b6b10a322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- POC 3 -->
+            <div class="poc-card">
+              <div class="poc-image">P</div>
+              <h3 class="poc-name">Pratyush L Daddi</h3>
+              <div class="poc-branch">Electronics Engineering</div>
+              <div class="poc-contact">
+                <a href="mailto:varun.singh.me.22@itbhu.ac.in" title="Email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/pratyush-l-daddi-0b2299260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- POC 4 -->
+            <div class="poc-card">
+              <div class="poc-image">S</div>
+              <h3 class="poc-name">Suhani Saxena</h3>
+              <div class="poc-branch">Mining Engineering</div>
+              <div class="poc-contact">
+                <a href="mailto:priya.gupta.che.22@itbhu.ac.in" title="Email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/suhani-saxena-54ba03320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" title="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- POC 5 -->
+            <div class="poc-card">
+              <div class="poc-image">A</div>
+              <h3 class="poc-name">Ashima Verma</h3>
+              <div class="poc-branch">Metallurgical Engineering</div>
+              <div class="poc-contact">
+                <a href="mailto:siddharth.kumar.met.22@itbhu.ac.in" title="Email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/ashima-verma-55b406325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- POC 6 -->
+            <div class="poc-card">
+              <div class="poc-image">Y</div>
+              <h3 class="poc-name">Yash Dubey</h3>
+              <div class="poc-branch">Electronics Engineering</div>
+              <div class="poc-contact">
+                <a href="mailto:neha.verma.ce.22@itbhu.ac.in" title="Email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/yash-dubey-084856323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <p>© 2024 Ask The Alumni - SAIC Initiative. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

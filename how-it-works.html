@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How It Works - Ask The Alumni</title>
+    <link rel="stylesheet" href="ata.css">
+    <style>
+      .flip-container {
+        perspective: 1000px;
+        margin-bottom: 2rem;
+      }
+      
+      .flip-card {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        cursor: pointer;
+        transform-style: preserve-3d;
+        transition: transform 1.2s;
+      }
+      
+      .flip-container:hover .flip-card {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-front, .flip-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 1rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .flip-front {
+        background: linear-gradient(to right, var(--blue-600), var(--indigo-700));
+        color: white;
+      }
+      
+      .flip-back {
+        background: white;
+        color: var(--gray-900);
+        transform: rotateY(180deg);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
+      
+      .flip-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .guidelines-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+
+      @media (max-width: 1024px) {
+        .guidelines-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 640px) {
+        .guidelines-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen bg-white">
+      <!-- Navigation -->
+      <nav class="nav">
+        <div class="container">
+          <div class="nav-content">
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <!-- <li><a href="#guidelines">Guidelines</a></li> -->
+            </ul>
+            <a href="index.html" class="logo">
+              <img src="logo.svg" alt="ATA Logo" width="80" height="80">
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <header class="hero">
+        <div class="container">
+          <div class="text-center">
+            <h1 class="typing">How It Works</h1>
+            <p>A comprehensive guide to making the most of your ATA experience</p>
+          </div>
+        </div>
+        <div class="hero-skew"></div>
+      </header>
+
+      <!-- Guidelines Section -->
+      <section id="guidelines" class="py-20">
+        <div class="container">
+          <h2 class="section-title">Student Guidelines</h2>
+          
+          <div class="guidelines-grid">
+            <!-- Flip Card 1 -->
+            <div class="flip-container">
+              <div class="flip-card">
+                <div class="flip-front">
+                  <div class="flip-icon">📝</div>
+                  <h3 class="text-xl font-bold mb-2">Registration Process</h3>
+                  <p>Click to learn about the registration requirements</p>
+                </div>
+                <div class="flip-back">
+                  <h3 class="text-xl font-bold mb-4">How to Register</h3>
+                  <ul class="text-left">
+                    <li>Complete the online google form</li>
+                    <li><a href="https://forms.gle/iDmxFj74oxjXtswXA">Click Here to Register</a></li>
+                    <li>You will recieve an invitation link to ATA Whatsapp Community</li>
+                    <li>Stay tuned as further updates will be shared through that</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 2 -->
+            <div class="flip-container">
+              <div class="flip-card">
+                <div class="flip-front">
+                  <div class="flip-icon">🤝</div>
+                  <h3 class="text-xl font-bold mb-2">Meeting Etiquette</h3>
+                  <p>Essential guidelines for alumni interactions</p>
+                </div>
+                <div class="flip-back">
+                  <h3 class="text-xl font-bold mb-4">Professional Conduct</h3>
+                  <ul class="text-left">
+                    <li>Be punctual</li>
+                    <li>Start with Respect, Ease into Casual</li>
+                    <li>Be Curious, Not Nosy</li>
+                    <li>Follow Up If Needed — Politely</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 3 -->
+            <div class="flip-container">
+              <div class="flip-card">
+                <div class="flip-front">
+                  <div class="flip-icon">📅</div>
+                  <h3 class="text-xl font-bold mb-2">Session Structure</h3>
+                  <p>Understanding how meetings are organized</p>
+                </div>
+                <div class="flip-back">
+                  <h3 class="text-xl font-bold mb-4">Meeting Format</h3>
+                  <ul class="text-left">
+                    <li>An online meet</li>
+                    <li>An Alumni and a SAIC executive</li>
+                    <li>Group size: 4-5 students</li>
+                    <li>A Whatsapp group</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 4 -->
+            <div class="flip-container">
+              <div class="flip-card">
+                <div class="flip-front">
+                  <div class="flip-icon">🎯</div>
+                  <h3 class="text-xl font-bold mb-2">Goal Setting</h3>
+                  <p>Making the most of your mentorship</p>
+                </div>
+                <div class="flip-back">
+                  <h3 class="text-xl font-bold mb-4">Setting Objectives</h3>
+                  <ul class="text-left">
+                    <li>Follow up with Alumni if needed</li>
+                    <li>Gain Confidence and Professionalism</li>
+                    <li>Ask about various path that one can go on</li>
+                    <!-- <li>• Seek regular feedback</li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 5 -->
+            <div class="flip-container">
+              <div class="flip-card">
+                <div class="flip-front">
+                  <div class="flip-icon">📚</div>
+                  <h3 class="text-xl font-bold mb-2">What to talk about?</h3>
+                  <p>Create a friendly and comfortable environment to build a conversation upon</p>
+                </div>
+                <div class="flip-back">
+                  <h3 class="text-xl font-bold mb-4">How to approach?</h3>
+                  <ul class="text-left">
+                    <li>Start off with a brief and formal introduction</li>
+                    <li>About their journey and experience in and after college</li>
+                    <li>Keep them updated with the happenings and developments at the Institute</li>
+                    <li>Express your gratitude for their time</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flip Card 6 -->
+            <div class="flip-container">
+              <div class="flip-card">
+                <div class="flip-front">
+                  <div class="flip-icon">🌟</div>
+                  <h3 class="text-xl font-bold mb-2">Program Benefits</h3>
+                  <p>Understanding your advantages</p>
+                </div>
+                <div class="flip-back">
+                  <h3 class="text-xl font-bold mb-4">Key Benefits</h3>
+                  <ul class="text-left">
+                    <li>Real life exposure</li>
+                    <li>Lifelong connection</li>
+                    <li>Learn about diverse journeys</li>
+                    <li>Improve your soft skills</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <p>© 2025 Ask The Alumni - SAIC Initiative. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

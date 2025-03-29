@@ -1,2 +1,2 @@
 # ATA-saic
-a webpage using react
+a webpage for students using html, 
